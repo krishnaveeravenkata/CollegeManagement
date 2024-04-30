@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #218380; /* Set the total background color to #218380 */
+            color: #ffffff; /* Text color changed to white */
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 5px;
+            border: 2px solid white; /* Added white border */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: black; /* Changed to black */
+            color: #ffffff; /* Text color changed to white */
+        }
+        h2 {
+            text-align: center;
+            color: #ffffff; /* Set the color to white */
+            text-decoration: underline; /* Add underline */
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff; /* Text color changed to white */
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            text-decoration: none; /* Remove underline */
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #fbb13c; /* Changed to the specified color */
+            border: none;
+            border-radius: 3px;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #d89e26; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="RegisterServlet" method="post">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required><br>
+            <label for="studentGroup">Student Group:</label>
+            <input type="text" id="studentGroup" name="studentGroup" required><br>
+            <label for="studentSection">Student Section:</label>
+            <input type="text" id="studentSection" name="studentSection" required><br>
+            <label for="studentPhoneNumber">Student Phone Number:</label>
+            <input type="text" id="studentPhoneNumber" name="studentPhoneNumber" required><br>
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" required><br>
+            <label for="motherName">Mother's Name:</label>
+            <input type="text" id="motherName" name="motherName" required><br>
+            <label for="parentPhoneNumber">Parent's Phone Number:</label>
+            <input type="text" id="parentPhoneNumber" name="parentPhoneNumber" required><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>

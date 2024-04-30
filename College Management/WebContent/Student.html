@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Page</title>
+    <style>
+        body {
+            background-image: url('https://www.wallpapertip.com/wmimgs/66-666819_website-design-background-creative-background-image-for-website.jpg');
+            background-size: 100% 100%; /* Background image covers entire screen */
+            font-family: Arial, sans-serif;
+            color: white; /* Text color changed to white */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            z-index: 1; /* Ensure content is above the background */
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: white; /* Link color changed to white */
+            font-size: 24px; /* Increase font size */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome To College Management System</h2>
+        <ul>
+            <li><a href="StudentServlet">Student Information Form</a></li>
+            <li><a href="LogoutServlet">Logout</a></li>
+        </ul>
+    </div>
+</body>
+</html>
